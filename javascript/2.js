@@ -1,4 +1,4 @@
-let ciudades = [];
+const ciudades = [];
 
 while (true) {
   let ciudad = prompt(
