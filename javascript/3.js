@@ -8,9 +8,9 @@ function lanzarDado() {
 
 // Repetir el lanzamiento de dos dados 50 veces
 for (let i = 0; i < 50; i++) {
-  let dado1 = lanzarDado();
-  let dado2 = lanzarDado();
-  let suma = dado1 + dado2;
+  const dado1 = lanzarDado();
+  const dado2 = lanzarDado();
+  const suma = dado1 + dado2;
 
   // Incrementar el contador en la posición correspondiente a la suma
   apariciones[suma - 2]++; // se le resta 2 ya que la suma minima es 2 y va en la pocicion 0 del arreglo apariciones, el 3 en la 1 y asi sucesivamente hasta la posicion 10
@@ -27,5 +27,4 @@ for (let i = 0; i < apariciones.length; i++) {
   document.write(`<tr><td>${i + 2}</td><td>${apariciones[i]}</td></tr>`)
   //se hace el i+2 porque el i arranca de 0 y el primer numero que hay que poner es 2
 }
-
 document.write("</table>");
